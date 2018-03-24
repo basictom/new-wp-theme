@@ -5,11 +5,7 @@ var pos = false;
 var sticky = document.getElementById('sticky-nav');
 
 
-window.onscroll = function(){
-  var y = window.pageYOffset;
-  var arrow = document.getElementById('arrow');
 
-}
 
 function initHeader(){
   var header = document.getElementById('header');

@@ -1,4 +1,6 @@
 var el = document.getElementById("logo");
+var arrow = document.getElementById("arrow");
+var botHead = document.getElementById("header");
 
 function fadeIn(el, time) {
   el.style.opacity = 0;
@@ -16,4 +18,12 @@ function fadeIn(el, time) {
   tick();
 }
 
-fadeIn(el, 3000);
+fadeIn(el, 5000);
+fadeIn(arrow, 10000);
+
+console.log("header", botHead);
+
+window.onscroll = function(){
+  // var y = window.pageYOffset;
+  // let bottom = window.
+}
