@@ -175,11 +175,19 @@ li {
   left:50%;
   transform: translate(-50%, -50%);
 }
-nav {
+.hide-nav {
   display: none;
   height: 100px;
   background-color: blue;
   transition: all 5s;
+}
+.show-nav {
+  display: block;
+  height: 100px;
+  background-color: blue;
+  transition: all 5s;
+  position: fixed;
+  top:0px;
 }
 .header nav {
   float:right;
@@ -263,7 +271,7 @@ nav {
   grid-column-gap: 40px;
 }
 .publication-one {
-  grid-column: 
+  grid-column:
 }
 
 /*
