@@ -168,22 +168,33 @@ li {
   nAVIGATION
   ==========
 */
-.logo {
-  float:left;
-  position: relative;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+.nav-container {
+  display:grid;
+  grid-template-columns:10% auto auto 10%;
+  grid-template-rows: auto auto;
+}
+.nav-logo {
+  grid-column: 2;
+  grid-row: 2;
+  text-align:left;
+}
+.nav-items {
+  grid-column: 3;
+  grid-row: 2;
+  text-align:right;
+}
+.nav-contact-info {
+  grid-column: 3;
+  grid-row: 1;
+  text-align:right;
 }
 nav {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 4px solid #3cddd5;
-    height: 55px;
+    height: auto;
     top: 0;
     position: absolute;
-    /* hold tight... */
     visibility: none;
-    /* we'll override these shortly */
     z-index: 1000;
     width: 100%;
 }
@@ -191,13 +202,28 @@ nav ul {
     list-style: none;
 }
 nav li {
-    float: left;
+    /* float: left; */
+    display: inline-block;
     border-right: 1px solid red;
     padding: 0 10px;
 }
 nav li:last-child {
     border: 0;
 }
+
+/*
+  ======
+  hEADER
+  ======
+*/
+.logo {
+  float:left;
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
 /*
   ===============
   pROGRESS lOADER
