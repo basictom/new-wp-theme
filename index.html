@@ -21,14 +21,23 @@
   </div>
 
   <!-- Sticky Navigation -->
-  <div class="hide-nav">
-    <ul>
-      <li>Nav Item One</li>
-      <li>Nav Item Two</li>
-      <li>Nav Item Three</li>
-      <li>Nav Item Four</li>
-    </ul>
-  </div>
+  <nav class="wrap" data-anchor-target=".intro-container" data-200-top="opacity:0;" data-150-top="visibility:visible; top: -55px; opacity: 0.3;" data-100-top="opacity: 1; position: fixed; top: 0;">
+      <div class="container">
+          <div class="five columns">My Company</div>
+          <div class="eleven columns last">
+              <ul>
+                  <li><a href="#1">Item 1</a>
+                  </li>
+                  <li><a href="#2">Item 2</a>
+                  </li>
+                  <li><a href="#3">Item 3</a>
+                  </li>
+                  <li><a href="#4">Item 4</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
   <!-- End of Sticky Navigation -->
 
   <div class="intro-container">
@@ -115,6 +124,8 @@
   src="http://code.jquery.com/jquery-3.3.1.slim.js"
   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
   crossorigin="anonymous"></script>
+  <!-- Skrollr script -->
+  <script src="https://rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
   <!-- Main Scripts -->
   <script src="./scripts/main.js"></script>
   <script src="./scripts/animations.js"></script>

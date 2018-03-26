@@ -20,10 +20,3 @@ function fadeIn(el, time) {
 
 fadeIn(el, 5000);
 fadeIn(arrow, 10000);
-
-console.log("header", botHead);
-
-window.onscroll = function(){
-  // var y = window.pageYOffset;
-  // let bottom = window.
-}
