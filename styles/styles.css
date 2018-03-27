@@ -18,6 +18,9 @@ ul {
 li {
   display: inline-block;
 }
+a {
+  list-style-type: none;
+}
 .pad-top-30 {
   padding: 30px 0px;
 }
@@ -187,6 +190,8 @@ li {
   grid-column: 3;
   grid-row: 1;
   text-align:right;
+  padding-top: 10px;
+  padding-right:10px;
 }
 nav {
     background-color: rgba(255, 255, 255, 1);
@@ -202,11 +207,12 @@ nav ul {
     list-style: none;
 }
 nav li {
-    /* float: left; */
     display: inline-block;
-    border-right: 1px solid red;
-    padding: 0 10px;
+    padding: 20px 10px;
 }
+  nav li:hover {
+    background-color: #333;
+  }
 nav li:last-child {
     border: 0;
 }
