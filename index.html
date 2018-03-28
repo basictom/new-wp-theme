@@ -29,17 +29,13 @@
           <div class="nav-logo">My Company</div>
           <div class="nav-items">
               <ul>
-                  <li><a href="#1">Item 1</a>
-                  </li>
-                  <li><a href="#2">Item 2</a>
-                  </li>
-                  <li><a href="#3">Item 3</a>
-                  </li>
-                  <li><a href="#4">Item 4</a>
-                  </li>
+                  <a href="#"><li>Item 1</li></a>
+                  <a href="#"><li>Item 2</li></a>
+                  <a href="#"><li>Item 3</li></a>
+                  <a href="#"><li>Item 4</li></a>
               </ul>
           </div>
-          <div class="nav-contact-info">barbara@fhi.com | <strong>617.738.1000</strong></div>
+          <div class="nav-contact-info"><a href="mailto:barbara@fhi.com?Subject:Please%20tell%20me%20more%20about%20staging">barbara@fhi.com</a> | <strong>617.738.1000</strong></div>
       </div>
   </nav>
   <!-- End of Sticky Navigation -->
@@ -74,12 +70,12 @@
     <div class="publications">
       <div class="publication-content-container">
         <h2>Publications title</h2>
-        <p>
+        <p class="photo-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula vel felis eu vehicula. Suspendisse sodales erat at dui tincidunt pharetra. Duis molestie sagittis lectus eu luctus. Fusce viverra enim et ante tincidunt, sit amet interdum risus luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ulla
         </p>
         <div class="publication-content">
 
-          <div class="publication-one">
+          <div class="publication-one pub-shadow">
             <img src="./assets/photo_08.jpg">
             <h3>Publication Title</h3>
             <p>
@@ -90,7 +86,7 @@
             </p>
             <button class="btn pub-btn">See more</button>
           </div>
-          <div class="publication-two">
+          <div class="publication-two pub-shadow">
             <img src="./assets/photo_08.jpg">
             <h3>Publication Title</h3>
             <p>
@@ -110,28 +106,30 @@
   <!-- Contact section -->
   <div class="contact pad-top-30">
     <h2>Contact Us Now title</h2>
+    <form id="contact-form" name="contact-form">
     <div class="contact-container">
-        <div class="contact-name">
-          <input type="text" placeholder="Full Name" class="contact-name" required/>
-        </div>
-        <div class="contact-email">
-          <input type="text" placeholder="Email" class="contact-email" required/>
-        </div>
-        <div class="contact-phone">
-          <input type="text" placeholder="Phone Number" class="contact-phone" required/>
-        </div>
-        <div class="contact-select">
-          <select class="contact-select" required>
-            <option>Select One...</option>
-            <option>Broker</option>
-            <option>Builder</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="contact-btn">
-            <button class="btn contact-btn">See more</button>
-        </div>
+          <div class="contact-name">
+            <input type="text" placeholder="Full Name" id="contact-name" class="contact-name" required/>
+          </div>
+          <div class="contact-email">
+            <input type="email" placeholder="Email" id="contact-email" class="contact-email" required/>
+          </div>
+          <div class="contact-phone">
+            <input type='tel' placeholder="Phone Number" id="contact-phone" class="contact-phone" required/>
+          </div>
+          <div class="contact-select">
+            <select id="contact-select" class="contact-select" required>
+              <option>Select One...</option>
+              <option>Broker</option>
+              <option>Builder</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="contact-btn">
+              <input type="submit" class="btn contact-btn"></input>
+          </div>
     </div>
+    </form>
   </div>
   <div class="footer">
 
@@ -149,5 +147,6 @@
   <script src="./scripts/main.js"></script>
   <script src="./scripts/animations.js"></script>
   <script src="./scripts/navigation.js"></script>
+  <script src="./scripts/contact-form.js"></script>
 </body>
 </html>

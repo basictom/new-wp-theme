@@ -4,9 +4,6 @@ var height, width;
 var pos = false;
 var sticky = document.getElementById('sticky-nav');
 
-
-
-
 function initHeader(){
   var header = document.getElementById('header');
   height = window.innerHeight;
