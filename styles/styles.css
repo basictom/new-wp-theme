@@ -129,10 +129,11 @@ a {
 .btn:after {
 	content: '';
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+  color: #ffffff;
 }
 .btn {
 	border: 3px solid #3cddd5;
@@ -155,6 +156,7 @@ a {
 .btn:hover,
 .btn:active {
 	color: #fff;
+  z-index: 5'
 }
 
 .btn:hover:after {
@@ -280,14 +282,6 @@ nav li:last-child {
   grid-row-start:2;
   grid-row-end: 3;
   /* background-color: lightgreen; */
-  background: rgba(214,252,250,1);
-  background: -moz-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(214,252,250,1)), color-stop(100%, rgba(60,221,213,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 );
 }
 .introduction {
   display: inline-grid;
@@ -327,30 +321,61 @@ nav li:last-child {
   ============
 */
 .publication-container {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   grid-column: 1/4;
   grid-row:4;
   text-align:center;
+  padding:50px 0px;
+  background: rgba(214,252,250,1);
+  background: -moz-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(214,252,250,1)), color-stop(100%, rgba(60,221,213,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  background: linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 );
 }
 .publications {
   display: inline-grid;
   grid-template-columns: 15% auto 15%;
   grid-template-rows: auto;
-  padding:115px;
+  padding:50px 0px;
 }
 .publication-content-container {
   grid-column: 2;
   grid-row:auto;
   text-align:left;
 }
+.publication-content-container h2 {
+  text-align:center;
+}
+.publication-content-container p {
+  padding: 0px 20px;
+}
 .publication-content {
   display: inline-grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  grid-column-gap: 40px;
+  text-align:center;
+}
+.publication-content img {
+  width:100%;
+}
+.publication-content p {
+  text-align:left;
 }
 .publication-one {
-  grid-column:
+  padding: 30px;
+  margin: 20px;
+  background-color: #ffffff;
+}
+.publication-two {
+  padding: 30px;
+  margin: 20px;
+  background-color: #ffffff;
+}
+.pub-link {
+  font-size: 11px;
 }
 
 /*
@@ -367,30 +392,48 @@ nav li:last-child {
   display:inline-grid;
   grid-template-columns: 50% 50%;
   grid-template-rows:25% 25% 25% 25%;
-  grid-column-gap: 20px;
   text-align:center;
+  width: 50%;
+}
+.contact-container input {
+  font-size: 20px;
+  padding-left: 5px;
+}
+.contact-container select {
+  font-size: 20px;
 }
 .contact-name {
   grid-column: 1 / span 2;
   grid-row: 1;
-  width:100%;
+  width:99.3%;
+  margin: 5px 0px 0px 0px;
+  padding: 10px 0px;
 }
 .contact-email {
   grid-column: 1 / span 2;
-  width:100%;
+  width:99.3%;
+  margin: 5px 0px 0px 0px;
+  padding: 10px 0px;
 }
 .contact-phone {
   grid-column: 1 / span 1;
-  width:100%;
+  width:95%;
+  text-align: left;
+  margin: 5px 0px 0px 0px;
+  padding: 10px 0px;
 }
 .contact-select {
   grid-column: 2 / span 2;
   width:100%;
+  text-align:right;
+  margin: 5px 0px 0px 0px;
+  padding: 10px 0px;
 }
 .contact-btn {
   grid-column: 1 / span 2;
   width:100%;
   margin: 0;
+  margin: 10px 0px 0px 0px;
 }
 /*
   ======
