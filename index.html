@@ -106,19 +106,19 @@
   <!-- Contact section -->
   <div class="contact pad-top-30">
     <h2>Contact Us Now title</h2>
-    <form id="contact-form" name="contact-form">
+    <form id="gform" method="POST" data-email="tpfitz42@gmail.com" action="https://script.google.com/macros/s/AKfycbwTLEwonjdisfAudbO_wN7fQMqukHmvKBqSucZYxn84wy0VLG8/exec">
     <div class="contact-container">
           <div class="contact-name">
-            <input type="text" placeholder="Full Name" id="contact-name" class="contact-name" required/>
+            <input type="text" name="FullName" placeholder="Full Name" id="contact-name" class="contact-name" required/>
           </div>
           <div class="contact-email">
-            <input type="email" placeholder="Email" id="contact-email" class="contact-email" required/>
+            <input type="email" name="Email" placeholder="Email" id="contact-email" class="contact-email" required/>
           </div>
           <div class="contact-phone">
-            <input type='tel' placeholder="Phone Number" id="contact-phone" class="contact-phone" required/>
+            <input type='tel' name="Phone" placeholder="Phone Number" id="contact-phone" class="contact-phone" required/>
           </div>
           <div class="contact-select">
-            <select id="contact-select" class="contact-select" required>
+            <select id="contact-select" name="Type" class="contact-select" required>
               <option>Select One...</option>
               <option>Broker</option>
               <option>Builder</option>
@@ -128,18 +128,32 @@
           <div class="contact-btn">
               <input type="submit" class="btn contact-btn"></input>
           </div>
+          <div id="email-invalid" class="no-display">
+          </div>
+
     </div>
     </form>
+    <div id="thankyou_message" class="no-display">
+      <h2>Thank you for submitting your contact information. A representative will be in touch with you shortly. Have a nice day!</h2>
+    </div>
   </div>
   <div class="footer-container">
-    
+      <div class="footer">
+        <div class="footer-content">
+
+        </div>
+      </div>
   </div>
 </div>
+
 
   <script
   src="http://code.jquery.com/jquery-3.3.1.slim.js"
   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
   crossorigin="anonymous"></script>
+  <!-- Google script for AJAX contact form submit. Will not redirect on submission -->
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script> -->
   <!-- Skrollr script -->
   <script src="https://rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
   <!-- Main Scripts -->
