@@ -1,27 +1,3 @@
-// console.log("linked contact js");
-
-// let myForm = document.forms["contact-form"].getElementsByTagName("input");
-
-//let myForm = document.getElementById('contact-form');
-// let fullName = document.getElementById('contact-name');
-// let fullEmail = document.getElementById('contact-email');
-// let fullPhone = document.getElementById('contact-phone');
-// let select = document.getElementById('contact-select');
-//
-// myForm.addEventListener('submit', function(e){
-//   e.preventDefault();
-//   makeArray();
-// });
-//
-// let makeArray = () => {
-//   contactArray = [{fullName: fullName.value}, {email: fullEmail.value}, {phoneNumber: fullPhone.value}, {type: select.value}];
-//   console.log("contact", contactArray);
-// }
-//
-
-
-// Email form shit for googleapis
-
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
@@ -111,6 +87,7 @@ function handleFormSubmit(event) {
         // console.log(xhr.responseText);
         document.getElementById("gform").style.display = "none"; // hide form
         document.getElementById("thankyou_message").style.display = "block";
+        document.getElementById("thankyou_message").style.margin = "0 auto";
         return;
     };
     console.log("passed in data", data);
@@ -123,7 +100,6 @@ function handleFormSubmit(event) {
 }
 function loaded() {
   // console.log("Contact form submission handler loaded successfully.");
-  // bind to the submit event of our form
   var form = document.getElementById("gform");
   form.addEventListener("submit", handleFormSubmit, false);
 };

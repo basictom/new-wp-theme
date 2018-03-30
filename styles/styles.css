@@ -453,6 +453,11 @@ nav li:last-child {
 .no-display {
   display: none;
 }
+.thankyou {
+  width: 50%;
+  border: 1px solid #777;
+  padding: 30px;
+}
 /*
   ======
   fOOTER
