@@ -27,7 +27,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: 15% auto 15%;
-  grid-template-rows: repeat(6, 16.6%);
+  grid-template-rows: repeat(7, 14.29%);
 }
 #header {
   width:100%;
@@ -401,6 +401,8 @@ nav li:last-child {
    grid-column: 2;
    grid-row: 5;
    text-align:center;
+   transform: all 0.3s;
+   height: auto;
  }
 .contact-container {
   display:inline-grid;
@@ -466,17 +468,18 @@ nav li:last-child {
 
 .footer-container {
   grid-column: 1 / span 3;
-  grid-row: 6;
-  height: 300px;
-  background-color:teal;
+  grid-row: 7;
+  height: auto;
+  /*background-color:teal;*/
   border-top:9px solid darkgreen;
 }
 .footer {
   display: inline-grid;
-  grid-template-columns: 15% auto 15%;
-  grid-template-rows: auto;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 25% 75%;
   padding:50px 0px;
 }
-.footer-content {
-
+.footer-navigation {
+  grid-column: 1;
+  grid-row: ;
 }

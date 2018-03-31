@@ -168,4 +168,4 @@ function createImage(src, onload) {
 var twoface = TwoFace('twoface-demo', 650, 366);
 // twoface.add('http://resources3.news.com.au/images/2011/01/14/1225987/833143-wivenhoe-dam-is-near-full-on-january-2011-during-the-queensland-floods-.jpg');
 twoface.add('./assets/photo_08.jpg');
-twoface.add('http://resources2.news.com.au/images/2011/01/14/1225987/833598-wivenhoe-dam-near-full-in-august-2010-.jpg');
+twoface.add('./assets/photo_08.jpg');
