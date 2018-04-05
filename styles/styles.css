@@ -470,16 +470,29 @@ nav li:last-child {
   grid-column: 1 / span 3;
   grid-row: 7;
   height: auto;
-  /*background-color:teal;*/
   border-top:9px solid darkgreen;
+  text-align:center;
 }
 .footer {
   display: inline-grid;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 25% 75%;
-  padding:50px 0px;
+  /* padding:50px 0px; */
+  width:90%;
+  text-align:left;
 }
 .footer-navigation {
-  grid-column: 1;
-  grid-row: ;
+  grid-column: 3;
+  grid-row: 1;
+  background-color: purple;
+}
+.footer-logo {
+  grid-column:1;
+  grid-row:2;
+  background-color:pink;
+}
+.footer-email{
+  grid-column:3;
+  grid-row:2;
+  background-color:beige;
 }
