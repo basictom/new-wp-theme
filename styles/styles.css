@@ -478,16 +478,6 @@ body {
   padding: 0;
 }
 
-h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2em;
-}
-@media (min-width: 768px) {
-  h4 {
-    font-size: 3em;
-  }
-}
-
 .callout-text {
   text-align: center;
   max-width: 1140px;
@@ -590,29 +580,28 @@ h4 {
   grid-column: 1 / span 3;
   grid-row: 7;
   height: auto;
-  border-top:9px solid darkgreen;
+  border-top:9px solid slategrey;
   text-align:center;
+  background-color: darkgrey;
 }
 .footer {
   display: inline-grid;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 25% 75%;
-  /* padding:50px 0px; */
+  padding:20px 0px 50px 0px; 
   width:90%;
   text-align:left;
 }
 .footer-navigation {
-  grid-column: 3;
-  grid-row: 1;
-  background-color: purple;
+  grid-column: 1;
+  grid-row: 2;
 }
 .footer-logo {
   grid-column:1;
-  grid-row:2;
-  background-color:pink;
+  grid-row:1;
 }
 .footer-email{
   grid-column:3;
-  grid-row:2;
+  grid-row:1;
   background-color:beige;
 }
