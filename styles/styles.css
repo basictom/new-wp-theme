@@ -41,9 +41,12 @@ a {
   background-size: cover;
   background-position: center bottom;
   text-align:center;
-  background-image: linear-gradient(to bottom, #333333, transparent), url('../assets/photo_08.jpg');
+  /* background-image: linear-gradient(to bottom, #333333, transparent), url('../assets/photo_08.jpg'); */
+  background-image: linear-gradient(to bottom, #333333, transparent), url('http://fitzgeraldhomeinteriors.com/wp-content/gallery-bank/gallery-uploads/o_1bv082vgm11db18fvtrb180bn4h18.jpg');
     background-blend-mode: overlay;
 }
+
+
 /*
   ==============
   bOUNCING aRROW
@@ -321,19 +324,18 @@ nav li:last-child {
   ============
 */
 .publication-container {
-  /* background-color: lightgreen; */
   grid-column: 1/4;
   grid-row:4;
   text-align:center;
   padding:50px 0px;
-  background: rgba(214,252,250,1);
+  /* background: rgba(214,252,250,1);
   background: -moz-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(214,252,250,1)), color-stop(100%, rgba(60,221,213,1)));
   background: -webkit-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
   background: -o-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  background: linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 );
+  background: -ms-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%); */
+  background: url(../assets/hex_pattern_02.png) , linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 ); */
   -webkit-box-shadow: 0px 0px 6px 2px rgba(51,51,51,0.3);
   -moz-box-shadow: 0px 0px 6px 2px rgba(51,51,51,0.3);
   box-shadow: 0px 0px 6px 2px rgba(51,51,51,0.3);
@@ -470,7 +472,7 @@ nav li:last-child {
 .testimonial-container {
   grid-column: 1 / span 3;
   grid-row: 6;
-  height: auto; 
+  height: auto;
 }
 
 body {
@@ -588,7 +590,7 @@ body {
   display: inline-grid;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 25% 75%;
-  padding:20px 0px 50px 0px; 
+  padding:20px 0px 50px 0px;
   width:90%;
   text-align:left;
 }
