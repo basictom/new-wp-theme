@@ -56,7 +56,7 @@ a {
 
 .arrows {
 	width: 60px;
-	height: 72px;
+	height: 90px;
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
@@ -66,7 +66,7 @@ a {
 .arrows path {
 	stroke: #3cddd5;
 	fill: transparent;
-	stroke-width: 1px;
+	stroke-width: 8px;
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite;
 }
@@ -597,6 +597,12 @@ body {
 .footer-navigation {
   grid-column: 1;
   grid-row: 2;
+}
+.footer-navigation .nav-items {
+  text-align: left;
+}
+.footer-navigation .nav-items li {
+  padding: 5px 20px;
 }
 .footer-logo {
   grid-column:1;
