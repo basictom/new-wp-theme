@@ -218,6 +218,7 @@ nav li {
   nav li:hover {
     background-color: #3cddd5;
     color:#ffffff;
+    transition: all 0.5s ease-in-out;
   }
 nav li:last-child {
     border: 0;
