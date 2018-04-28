@@ -285,7 +285,6 @@ nav li:last-child {
   grid-column:1/4;
   grid-row-start:2;
   grid-row-end: 3;
-  /* background-color: lightgreen; */
   background: url(../assets/water_color_bg.png)
 }
 .introduction {
@@ -369,6 +368,7 @@ nav li:last-child {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   text-align:center;
+  grid-template-areas: "one two";
 }
 .publication-content img {
   width:100%;
@@ -386,12 +386,14 @@ nav li:last-child {
   padding: 30px;
   margin: 20px;
   background-color: #ffffff;
+  grid-area: "one";
 }
 
 .publication-two {
   padding: 30px;
   margin: 20px;
   background-color: #ffffff;
+  grid-area: "two";
 }
 .pub-link {
   font-size: 11px;
@@ -406,7 +408,7 @@ nav li:last-child {
   cONTACT
   =======
 */
- .contact {
+.contact {
    grid-column: 2;
    grid-row: 5;
    text-align:center;
@@ -436,12 +438,14 @@ nav li:last-child {
 }
 .contact-email {
   grid-column: 1 / span 2;
+  grid-row: 2;
   width:99.3%;
   margin: 5px 0px 0px 0px;
   padding: 10px 0px;
 }
 .contact-phone {
   grid-column: 1 / span 1;
+  grid-row:3;
   width:95%;
   text-align: left;
   margin: 5px 0px 0px 0px;
@@ -449,6 +453,7 @@ nav li:last-child {
 }
 .contact-select {
   grid-column: 2 / span 2;
+  grid-row:3;
   width:100%;
   text-align:right;
   margin: 5px 0px 0px 0px;
@@ -456,6 +461,7 @@ nav li:last-child {
 }
 .contact-btn {
   grid-column: 1 / span 2;
+  grid-row:4;
   width:100%;
   margin: 0;
   margin: 10px 0px 0px 0px;
@@ -514,22 +520,11 @@ body {
   align-items: center;
   z-index: 9999;
 }
-@media (min-width: 768px) {
-  .testimonial-carousel .icon-container {
-    max-width: 50px;
-    padding: 0 10px;
-  }
-}
 .testimonial-carousel .icon-container span.lnr {
   color: #dadada;
   font-size: 1.6em;
   cursor: pointer;
   transition: color 0.3s linear;
-}
-@media (min-width: 768px) {
-  .testimonial-carousel .icon-container span.lnr {
-    font-size: 2.6em;
-  }
 }
 .testimonial-carousel .icon-container span.lnr:hover {
   color: #fff;
@@ -538,12 +533,6 @@ body {
   /*font-family: 'Bad Script', cursive;*/
   font-size: 1em;
 }
-@media (min-width: 768px) {
-  .testimonial-carousel p {
-    font-size: 1.4em;
-  }
-}
-
 .testimonial-items {
   position: relative;
   flex: 1;
@@ -621,5 +610,181 @@ body {
 .footer-email{
   grid-column:3;
   grid-row:1;
-  background-color:beige;
+  /*background-color:beige;*/
 }
+
+/*
+  =============
+  mEDIA QUERIES
+  =============
+*/
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, 14.29%);
+  }
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+    width:100%;
+  }
+  .intro-container {
+    grid-column:1;
+    grid-row:2/3;
+    background: url(../assets/water_color_bg.png)
+  }
+  .introduction {
+    display: inline-grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    text-align:center;
+    padding: 115px;
+  }
+  .intro-content {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .before-after {
+    display: none;
+  }
+  .publication-container {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .publications {
+    display: inline-grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: auto;
+    padding:50px 0px;
+  }
+  .publication-content-container {
+    grid-column: 2;
+    grid-row:auto;
+    text-align:left;
+  }
+  .publication-content-container h2 {
+    text-align:center;
+  }
+  .publication-content p {
+    padding: 0px 20px;
+  }
+  .publication-content {
+    display: inline-grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align:center;
+    grid-template-areas: "one"
+                         "two";
+  }
+  .contact {
+    grid-column: auto;
+    grid-row: 5;
+    text-align:center;
+    transform: all 0.3s;
+    height: auto;
+  }
+  .contact-container {
+    display:inline-grid;
+    grid-template-columns: auto;
+    grid-template-rows:25% 25% 25% 25% 25%;
+    text-align:center;
+    width: 50%;
+  }
+  .contact-name {
+    grid-column:auto;
+    grid-row:1;
+    width:100%;
+  }
+  .contact-email {
+    grid-column:auto;
+    grid-row:2;
+    width:100%;
+  }
+  .contact-phone {
+    grid-column:auto;
+    grid-row:3;
+    width:100%;
+  }
+  .contact-select {
+    grid-column:auto;
+    grid-row:4;
+    width:100%;
+  }
+  .contact-btn {
+    grid-column:auto;
+    grid-row:5;
+    width:100%;
+  }
+  .testimonial-carousel .icon-container {
+    max-width: 50px;
+    padding: 0 10px;
+  }
+  .testimonial-carousel .icon-container span.lnr {
+    font-size: 2.6em;
+  }
+  .testimonial-carousel p {
+    font-size: 1.4em;
+  }
+  .testimonial-container {
+    grid-column: auto;
+    grid-row: 6;
+    height: auto;
+  }
+  .footer-container {
+    grid-column:auto;
+    grid-row: 7;
+    height: auto;
+  }
+  .footer {
+    display: inline-grid;
+    grid-template-columns:auto;
+    grid-template-rows: 25% 25% 25%;
+    /*padding:20px 0px 50px 0px;*/
+    width:100%;
+    text-align:center;
+  }
+  .footer-email {
+    grid-column:auto;
+    grid-row:1;
+    text-align:center;
+  }  
+  .footer-logo {
+    grid-column:auto;
+    grid-row:2;
+    text-align:center;
+  }
+  .footer-navigation {
+    grid-column:auto;
+    grid-row:3;
+    text-align:center;
+  }
+    .nav-contact-info {
+      text-align:center;
+    }
+    .footer-navigation .nav-items {
+      text-align:center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
