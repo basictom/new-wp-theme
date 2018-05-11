@@ -12,10 +12,6 @@ h2 {
 p {
   font-size: 18px;
 }
-a {
-  text-decoration: none;
-  color: #fbfbfb;
-}
 .pad-top-30 {
   padding: 30px 0px;
 }
@@ -178,13 +174,15 @@ a {
 }
 .nav-logo {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1/3;
   text-align:left;
+  padding-top:10px;
 }
 .nav-items {
   grid-column: 3;
   grid-row: 2;
   text-align:right;
+  text-transform: uppercase;
 }
 .nav-contact-info {
   grid-column: 3;
@@ -192,6 +190,7 @@ a {
   text-align:right;
   padding-top: 10px;
   padding-right:10px;
+  padding-bottom:10px;
 }
 nav {
     background-color: rgba(255, 255, 255, 1);
@@ -208,16 +207,13 @@ nav ul {
 }
 nav li {
     display: inline-block;
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
   nav li:hover {
     background-color: #3cddd5;
     color:#ffffff;
     transition: all 0.5s ease-in-out;
   }
-nav li:last-child {
-    border: 0;
-}
 
 /*
   ======
@@ -230,6 +226,9 @@ nav li:last-child {
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
+}
+.logo img {
+  width: 48%;
 }
 
 /*
@@ -280,9 +279,9 @@ nav li:last-child {
   grid-column:1/4;
   grid-row-start:2;
   grid-row-end: 3;
-  /*background: url(../assets/water_color_bg.png)*/
+  background: url(../assets/water_color_bg.png)
   /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
 }
 .introduction {
   display: inline-grid;
@@ -416,6 +415,7 @@ nav li:last-child {
    text-align:center;
    transform: all 0.3s;
    min-height: 400px;
+   margin: 75px 0px;
  }
 .contact-container {
   display:inline-grid;
@@ -490,11 +490,6 @@ nav li:last-child {
   height: auto;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .callout-text {
   text-align: center;
   max-width: 1140px;
@@ -536,7 +531,7 @@ body {
 }
 .testimonial-carousel p {
   /*font-family: 'Bad Script', cursive;*/
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .testimonial-items {
   position: relative;
@@ -591,11 +586,15 @@ background-blend-mode: multiply,multiply;
 }
 .footer {
   display: inline-grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: 30% auto 25%;
   grid-template-rows: 25% 75%;
   padding:20px 0px 50px 0px;
   width:90%;
   text-align:left;
+}
+.footer a {
+  text-decoration: none;
+  color: #fbfbfb;
 }
 .footer-navigation {
   grid-column: 1;
@@ -610,9 +609,13 @@ background-blend-mode: multiply,multiply;
 .footer-navigation .nav-items li {
   padding: 5px;
   display: inline-block;
+  font-size: 11px;
 }
 .footer-navigation .nav-items ul:first-child {
   padding: 5px 20px;
+}
+.footer a:hover {
+  color: #3cddd5;
 }
 .footer-logo {
   grid-column:1;
