@@ -55,5 +55,6 @@
 
 	// set timing of dispatch click events
 	scrollInterval = setInterval(autoScroll, interval);
+	
 
 })();

@@ -586,7 +586,7 @@ background-blend-mode: multiply,multiply;
 }
 .footer {
   display: inline-grid;
-  grid-template-columns: 30% auto 25%;
+  grid-template-columns: 30% auto 40%;
   grid-template-rows: 25% 75%;
   padding:20px 0px 50px 0px;
   width:90%;
