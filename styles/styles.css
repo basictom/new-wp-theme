@@ -339,7 +339,7 @@ nav li {
   background-repeat:no-repeat;
   background-size: cover;
   /* background-position: center bottom; */
-  background: url(../assets/rolled_ink.png), linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
+  /*background: url(../assets/rolled_ink.png), linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);*/
   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 ); */
   background-repeat:no-repeat;
   background-size: cover;
