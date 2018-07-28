@@ -108,7 +108,7 @@ p {
 	cursor: pointer;
 	padding: 15px 60px;
 	display: inline-block;
-	margin: 15px 30px;
+	/*margin: 15px 30px;*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -193,8 +193,10 @@ p {
   padding-bottom:10px;
 }
 nav {
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom: 4px solid #3cddd5;
+    /*background-color: rgba(255, 255, 255, 1);*/
+    background-color: #97BBA8;
+    /*border-bottom: 4px solid #3cddd5;*/
+    color: #fbfbfb;
     height: auto;
     top: 0;
     position: absolute;
@@ -206,6 +208,7 @@ nav ul {
     list-style-type: none;
 }
 nav li {
+    color:grey;
     display: inline-block;
     padding: 20px 20px;
 }
@@ -279,7 +282,8 @@ nav li {
   grid-column:1/4;
   grid-row-start:2;
   grid-row-end: 3;
-  background: url(../assets/water_color_bg.png)
+  background-color: #D5896F;
+  /*background: url(../assets/water_color_bg.png);*/
   /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
   /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
 }
@@ -330,14 +334,15 @@ nav li {
   grid-row:4;
   text-align:center;
   padding:50px 0px;
-   background: rgba(214,252,250,1);
+  background-color: #DAB785;
+  /* background: rgba(214,252,250,1);
   background: -moz-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(214,252,250,1)), color-stop(100%, rgba(60,221,213,1)));
   background: -webkit-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
   background: -o-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);
   background: -ms-linear-gradient(-45deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%); 
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   /* background-position: center bottom; */
   /*background: url(../assets/rolled_ink.png), linear-gradient(135deg, rgba(214,252,250,1) 0%, rgba(60,221,213,1) 100%);*/
   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6fcfa', endColorstr='#3cddd5', GradientType=1 ); */
@@ -428,6 +433,10 @@ nav li {
   font-size: 20px;
   padding-left: 5px;
 }
+.contact-container .contact-btn input {
+  padding:10px 0px;
+  margin-top:20px;
+}
 .contact-container select {
   font-size: 20px;
 }
@@ -466,8 +475,19 @@ nav li {
   grid-row:4;
   width:100%;
   margin: 0;
-  margin: 10px 0px 0px 0px;
+  /*margin: 10px 0px 0px 0px;*/
   font-size:20px;
+}
+.contact-button {
+  font-size:20px;
+  background-color:transparent;
+  border:3px solid #3cddd5;
+  padding:10px 30px;
+  width:100%;
+}
+.contact-button:hover {
+  background-color:#3cddd5;
+  padding:10px 30px;
 }
 .no-display {
   display: none;
@@ -580,9 +600,9 @@ nav li {
   height: auto;
   /*border-top:4px solid slategrey;*/
   text-align:center;
-  /*background-color: darkgrey;*/
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
-background-blend-mode: multiply,multiply;
+  background-color: #031D44;
+  /*background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;*/
 }
 .footer {
   display: inline-grid;
@@ -643,6 +663,9 @@ background-blend-mode: multiply,multiply;
     grid-column: 1;
     grid-row: 1;
     width:100%;
+  }
+  nav {
+    display:none;
   }
   .intro-container {
     grid-column:1;
